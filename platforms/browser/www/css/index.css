@@ -1,0 +1,36 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    z-index: 0;
+}
+body{
+    padding-left: 70px;
+    padding-top: 100px;
+    background: url(../img/back.jpg);
+}
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background: url('../img/loader.gif') 50% 50% no-repeat #E5EFF1;
+}
+.link{
+    display: block;
+    height: 50px;
+    width: 100px;
+    border:1px solid white;
+    background: transparent;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 100px;
+}
+.loginBtn{
+    margin-right: 10px;
+}
