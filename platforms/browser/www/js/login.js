@@ -1,6 +1,6 @@
 $(window).on('load', function() {
 	var socket = null;
-    socket = io.connect('http://buddytrack.herokuapp.com', {'sync disconnect on unload': false });
+    socket = io.connect('http://35.162.224.166/', {'sync disconnect on unload': false });
 
     socket.on('connect', function(){
         if(localStorage.getItem("uid") != null){
@@ -23,7 +23,7 @@ $(window).on('load', function() {
     socket.on('second_ack', function() {
     	var loc = localStorage.getItem("uid");
 		$('iframe').attr({
-            src: 'http://geforce-buddytrack.rhcloud.com/signin?name='+loc,
+            src: 'http://35.162.224.166/signin?name='+loc,
         });
     });
 
@@ -36,5 +36,5 @@ $(window).on('load', function() {
 
 	$('iframe').on('load',function() {
 		$('.loader').fadeOut("fast");
-	});
+	});	
 });

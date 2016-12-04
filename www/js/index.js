@@ -7,9 +7,11 @@ $(window).on('load',function() {
         location.reload();
     }else{
         $('.loader').fadeOut("fast");
-        if(localStorage.getItem("phone") != null)
+        if(localStorage.getItem("uid") != null)
             location.href="login.html";
     }
+
+    console.log("In index.js");
 
 
     // else{
